@@ -1,0 +1,15 @@
+<h1>
+    <section id="alumnis" class="container">
+        <h1>All Alumnis</h1>
+            {{#each alumnis}}
+                <div class="alumni">
+                    <h5>KMITL ID : {{id}}</h5>
+                    <h5>Name     : {{name}} {{surname}}</h5>
+                    <h5>District : {{district}}</h5>
+                    <h5>Province : {{province}}</h5>
+                </div>
+            {{else}}
+                <p>No any alumni(s)'s data available.</p>
+            {{/each}}
+    </section>
+</h1>

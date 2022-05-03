@@ -1,0 +1,40 @@
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add Alumni Profile</h1>
+      <p>Your information will be storing in our AlumniWebApp</p>
+      {{#each errors}} 
+        <div class ="error"
+             <h1><p>{{text}}</p></h1>
+        </div>
+      {{/each}}
+      <form action = "/alumnis/add" method = "POST">
+        <div class="input-group">
+          <label for="id" class ="label-add-form">KMITL ID</label>
+          <input type="text" name="id" id="id" class="input-box" placeholder="eg. 63050xxx"
+            maxlength="8" value = {{id}}>
+        </div>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="input-box" placeholder="eg. Prayut, Taksin"
+          maxlength="100" value = {{name}}>
+        </div>
+        <div class="input-group">
+          <label for="surname">Surname</label>
+          <input type="text" name = "surname" id="surname" class="input-box" placeholder="eg. Chanocha, Chinnawat"
+            maxlength="100" value = {{surname}}>
+        </div>
+        <div class="input-group">
+          <label for="district">District</label>
+          <input type="text" name="district" id="district" class="input-box" placeholder="eg. Meung, Paknam, Ladkabang"
+            maxlength="100" value = {{district}}>
+        </div>
+        <div class="input-group">
+          <label for="province">Province</label>
+          <input type="text" name="province" id="province" class="input-box" placeholder="eg. Bangkok, Samutprakarn"
+            maxlength="100" value = {{province}}>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>
