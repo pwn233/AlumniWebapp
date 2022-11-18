@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-// module.exports = new Sequelize('AlumniWebApp', 'postgres', 'Gamers23', {
+// module.exports = new Sequelize('AlumniWebApp', 'postgres', 'password', {
 //     host: 'localhost',
 //     dialect: 'postgres',
 //     operatorsAliases: 0,
@@ -13,7 +13,7 @@ const Sequelize = require('sequelize');
 //     logging: false
 // });
 
-module.exports = new Sequelize('AlumniWebApp', 'yellowmango', 'Gamers23', {
+module.exports = new Sequelize('AlumniWebApp', 'yellowmango', 'password', {
     host: 'fruit.database.windows.net',
     dialect: 'mssql',
     operatorsAliases: 0,
